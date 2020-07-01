@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Новости</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__info">
+        <div class="logo header__logo">
+          <a href="#"><img src="img/header/logo.png" alt="logo" class="logo__image"></a>
+        </div>
+        <div class="header-information">
+          <div class="header__phones">
+            <a href="tel:+375296151919" class="phones">
+              <img class="img-svg" src="img/header/phone.svg" alt="phone" class="phones__image" id="phoneone">
+              <span class="phones__text">+375 (29) 615-19-19</span>
+            </a>
+            <a href="tel:+375296141919" class="phones">
+              <img class="img-svg" src="img/header/phone.svg" alt="phone" class="phones__image" id="phonetwo">
+              <span class="phones__text">+375 (29) 614-19-19</span>
+            </a>
+          </div>
+          
+          <div class="header__adress">
+            <a href="/contacts" class="adress">
+              <img class="img-svg" src="img/header/adress.svg" alt="adress" class="adress__image">
+              <span class="ardess__text">Минск, ул. Смолячкова, 4/105</span>
+            </a>
+          </div>
+          <div class="header__social social">
+            <a href="https://www.facebook.com/Status-leasing-2500773139950993/" class="social__facebook" target="_blank"><img class="img-svg" src="img/header/Facebook.svg" alt="facebook" ></a>
+            <a href="https://www.instagram.com/status_leasing/" class="socail__instagram" target="_blank"><img class="img-svg" src="img/header/instagram.svg" alt="instagram"></a>
+            <a href="https://vk.com/club184781168" class="social__vk" target="_blank"><img class="img-svg" src="img/header/Vk.svg" alt="vk"></a>
+          </div>
+          <div class="header__search">
+            <img class="img-svg" src="img/header/search.svg" alt="search" class="search__image" id="search__image">
+            <!-- <input type="search" class="search" id="search" placeholder="Поиск"> -->
+            <div class="search__block" id="search__block">
+              <input type="search" class="search__input" placeholder="Поиск" id="text" name="form-text">
+              <img src="img/header/search.svg" alt="search" class="search-image" id="search-image">
+            </div>
+          </div>
+          <div class="header__enter">
+            <span class="enter">Вход</span>
+          </div>
+        </div>
+        <!-- /.header-information -->
+        <div class="burger">
+          <div href="#" class="menu__btn">
+            <span></span>
+          </div>
+        </div>
+        <!-- /.header__burgs -->
+        <div class="header__telephone">
+          <a href="tel:+375290000000" class="telephone"><img src="img/mobheader/phone.svg" alt="phone"></a>
+        </div>
+
+      </div>
+      <!-- /.header__info -->
+      <nav class="header__nav">
+          <ul class="nav">
+            <li><a href="/" class="nav__link">Юридическим лицам</a></li>
+            <li><a href="/" class="nav__link">Физическим лицам</a></li>
+            <li><a href="/" class="nav__link">Акции и спецпредложения</a></li>
+            <li><a href="/" class="nav__link">Частые вопросы</a></li>
+            <li><a href="/" class="nav__link">КОнтакты</a></li>
+            <li><a href="/" class="nav__link">О компании</a></li>
+          </ul>
+          <!-- /.nav -->
+        </nav>
+      <!-- /.nav header__nav -->
+    </div>
+    <!-- /.container -->
+
+    <nav class="mobile">
+      <ul class="mobile__links">
+        <li class="legal once__links"><div class="mobile__link general">Юридическим лицам</div> 
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+          <ul class="general__list">
+            <li class="general__links">
+              <a href="/" class="moblink link__page">Юридическим лицам</a>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Грузовой транспорт</div> 
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li><a href="/" class="moblink general__link">Грузовой транспорт до 3,5 тонн</a></li>
+                <li><a href="/" class="moblink general__link">Грузовой транспорт свыше 3,5 тонн</a></li>
+                <li><a href="/" class="moblink general__link">Седельные тягачи</a></li>
+              </ul>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Спецтехника</div>
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li><a href="/" class="moblink general__link">Дорожно-строительная техника</a></li>
+                <li><a href="/" class="moblink general__link">Грузовой транспорт свыше 3,5 тонн</a></li>
+                <li><a href="/" class="moblink general__link">экскаваторы</a></li>
+                <li><a href="/" class="moblink general__link">краны</a></li>
+                <li><a href="/" class="moblink general__link">Подъемники и автовышки</a></li>
+                <li><a href="/" class="moblink general__link">Илососные машины</a></li>
+                <li><a href="/" class="moblink general__link">Экскаваторы-погрузчики</a></li>
+                <li><a href="/" class="moblink general__link">погрузчики</a></li>
+                <li><a href="/" class="moblink general__link">Автобетоно-смесители</a></li>
+              </ul>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Лесная техника</div>
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li><a href="/" class="moblink general__link">Машины транспортно-погрузочные лесные</a></li>
+                <li><a href="/" class="moblink general__link">лесовозы</a></li>
+                <li><a href="/" class="moblink general__link">трактора трелевочные</a></li>
+                <li><a href="/" class="moblink general__link">харвестеры </a></li>
+                <li><a href="/" class="moblink general__link">форвардеры</a></li>
+                <li class="general__links">
+                  <div class="mobile__link general--on">Гидроманипуляторы</div>
+                  <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                  <ul>
+                    <li><a href="/" class="moblink general__link--two">Гидроманипуляторы с кабиной</a></li>
+                    <li><a href="/" class="moblink general__link--two">Гидроманипуляторы без кабины</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Прицепы и полуприцепы</div>
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li class="general__links">
+                  <div class="mobile__link general--on">прицепы</div>
+                  <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                  <ul>
+                    <li class="general__links">
+                      <div class="mobile__link general--off">Для категории B</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link--three">Одноосные прицепы Fisso</a></li>
+                        <li><a href="/" class="moblink general__link--three">двухосные прицепы Fisso</a></li>
+                        <li><a href="/" class="moblink general__link--three">Для мототехники</a></li>
+                        <li><a href="/" class="moblink general__link--three">Рекламные прицепы</a></li>
+                        <li><a href="/" class="moblink general__link--three">Профессиональные двухосные прицепы с тормозами</a></li>
+                        <li><a href="/" class="moblink general__link--three">автовозы</a></li>
+                        <li><a href="/" class="moblink general__link--three">трехосные прицепы с тормозами</a></li>
+                      </ul>
+                    </li>
+                    <li class="general__links">
+                      <div class="mobile__link general--off">Для категории E</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link--three">Одноосные прицепы с тормозами</a></li>
+                        <li><a href="/" class="moblink general__link--three">двухосные прицепы с тормозами</a></li>
+                        <li><a href="/" class="moblink general__link--three">трехосные прицепы с тормозами</a></li>
+                        <li><a href="/" class="moblink general__link--three">автовозы</a></li>
+                        <li><a href="/" class="moblink general__link--three">Для спецтехники</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/" class="mobile__link general--off">Прицеп CAT 119</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="general__links">
+                  <div class="mobile__link general--on">полуприцепы</div>
+                  <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                  <ul>
+                    <li><a href="/" class="moblink general__link--two">Низкорамные Платформы</a></li>
+                    <li><a href="/" class="moblink general__link--two">Платформы АПС Стройремавто 554438</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/" class="mobile__link general--up">Автобусы и микроавтобусы</a></li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Такси</div>
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li><a href="/" class="moblink general__link">Популярные модели такси</a></li>
+                <li><a href="/" class="moblink general__link">премиум-такси</a></li>
+                <li><a href="/" class="moblink general__link">премиум-такси с личным водителем</a></li>
+              </ul>
+            </li>
+            <li><a href="/" class="mobile__link general--up">Легковые автомобили</a></li>
+            <li><a href="/" class="mobile__link general--up">Мототехника</a></li>
+          </ul>
+        </li>
+        <li class="physical once__links">
+          <div class="mobile__link general">Физическим лицам</div>
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+          <ul class="general__list">
+            <li class="general__links">
+              <a href="/" class="moblink link__page">Физическим лицам</a>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Легковые автомобили</div> 
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Мотоциклы</div> 
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Прицепы для мототехники</div> 
+            </li>
+          </ul>
+        </li>
+        <li class="sale once__links">
+          <div class="mobile__link general">Акции и спецпредложения</div>
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+          <ul class="general__list">
+            <li class="general__links">
+              <a href="/" class="moblink link__page">Юридическим лицам</a>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Физическим лицам</div> 
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Распродажа</div> 
+            </li>
+          </ul>
+        </li>
+        <li class="question once__links">
+          <div class="mobile__link general">Частые вопросы</div>
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+          <ul class="general__list">
+            <li class="general__links">
+              <a href="/" class="moblink link__page">Юридическим лицам</a>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Физическим лицам</div> 
+            </li>
+          </ul>
+        </li>
+        <li class="contacts once__links">
+          <div class="mobile__link general">Контакты</div>
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+        </li>
+        <li class="mobile__link about-company once__links">О компании
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+        </li>
+  
+      </ul>
+      <div class="mobile__phone">
+        <a href="tel:+375296151919" class="phones">
+          <img class="img-svg" src="img/header/phone.svg" alt="phone" class="phones__image" id="phoneone">
+          <span class="phones__text">+375 (29) 615-19-19</span>
+        </a>
+        <a href="tel:+375296141919" class="phones">
+          <img class="img-svg" src="img/header/phone.svg" alt="phone" class="phones__image" id="phonetwo">
+          <span class="phones__text">+375 (29) 614-19-19</span>
+        </a>
+      </div>
+      <div class="mobile__adress">
+        <a href="/contacts" class="adress">
+          <img class="img-svg" src="img/header/adress.svg" alt="adress" class="adress__image">
+          <span class="ardess__text">Минск, ул. Смолячкова, 4/105</span>
+        </a>
+      </div>
+      <div class="mobile__social">
+        <a href="https://www.facebook.com/Status-leasing-2500773139950993/" class="social__facebook" target="_blank"><img class="img-svg" src="img/header/Facebook.svg" alt="facebook" ></a>
+        <a href="https://www.instagram.com/status_leasing/" class="socail__instagram" target="_blank"><img class="img-svg" src="img/header/instagram.svg" alt="instagram"></a>
+        <a href="https://vk.com/club184781168" class="social__vk" target="_blank"><img class="img-svg" src="img/header/Vk.svg" alt="vk"></a>
+      </div>
+      <div class="mobile__search">
+        <div class="mobile__search" id="mobile-search">
+          <input type="search" class="mobile__input" placeholder="Поиск" id="text" name="form-text">
+          <img src="img/header/search.svg" alt="search" class="mobile__image" id="mobile-image">
+        </div>
+      </div>
+      <div class="mobile__enter">
+        <span class="enter">Вход</span>
+      </div>
+    </nav>
+    <!-- /.header-mobile -->
+  </header>
+  <!-- /.header -->
+
+  <main>
+    <div class="container">
+      <div class="row legals">
+        <div class="col-lg-3 col-md-3 leftmenu">
+          <div class="left__menu">
+            <nav class="left__menu--mobile">
+              <ul class="mobile__links">
+                <li class="legal once__links">
+                  <ul class="general__list leftlinks">
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Грузовой транспорт</div> 
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link">Грузовой транспорт до 3,5 тонн</a></li>
+                        <li><a href="/" class="moblink general__link">Грузовой транспорт свыше 3,5 тонн</a></li>
+                        <li><a href="/" class="moblink general__link">Седельные тягачи</a></li>
+                      </ul>
+                    </li>
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Спецтехника</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link">Дорожно-строительная техника</a></li>
+                        <li><a href="/" class="moblink general__link">Грузовой транспорт свыше 3,5 тонн</a></li>
+                        <li><a href="/" class="moblink general__link">экскаваторы</a></li>
+                        <li><a href="/" class="moblink general__link">краны</a></li>
+                        <li><a href="/" class="moblink general__link">Подъемники и автовышки</a></li>
+                        <li><a href="/" class="moblink general__link">Илососные машины</a></li>
+                        <li><a href="/" class="moblink general__link">Экскаваторы-погрузчики</a></li>
+                        <li><a href="/" class="moblink general__link">погрузчики</a></li>
+                        <li><a href="/" class="moblink general__link">Автобетоно-смесители</a></li>
+                      </ul>
+                    </li>
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Лесная техника</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link">Машины транспортно-погрузочные лесные</a></li>
+                        <li><a href="/" class="moblink general__link">лесовозы</a></li>
+                        <li><a href="/" class="moblink general__link">трактора трелевочные</a></li>
+                        <li><a href="/" class="moblink general__link">харвестеры </a></li>
+                        <li><a href="/" class="moblink general__link">форвардеры</a></li>
+                        <li class="general__links leftgeneral">
+                          <div class="mobile__link general--on">Гидроманипуляторы</div>
+                          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                          <ul>
+                            <li><a href="/" class="moblink general__link--two">Гидроманипуляторы с кабиной</a></li>
+                            <li><a href="/" class="moblink general__link--two">Гидроманипуляторы без кабины</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Прицепы и полуприцепы</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li class="general__links leftgeneral">
+                          <div class="mobile__link general--on">прицепы</div>
+                          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                          <ul>
+                            <li class="general__links leftgeneral">
+                              <div class="mobile__link general--off">Для категории B</div>
+                              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                              <ul>
+                                <li><a href="/" class="moblink general__link--three">Одноосные прицепы Fisso</a></li>
+                                <li><a href="/" class="moblink general__link--three">двухосные прицепы Fisso</a></li>
+                                <li><a href="/" class="moblink general__link--three">Для мототехники</a></li>
+                                <li><a href="/" class="moblink general__link--three">Рекламные прицепы</a></li>
+                                <li><a href="/" class="moblink general__link--three">Профессиональные двухосные прицепы с тормозами</a></li>
+                                <li><a href="/" class="moblink general__link--three">автовозы</a></li>
+                                <li><a href="/" class="moblink general__link--three">трехосные прицепы с тормозами</a></li>
+                              </ul>
+                            </li>
+                            <li class="general__links leftgeneral">
+                              <div class="mobile__link general--off">Для категории E</div>
+                              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                              <ul>
+                                <li><a href="/" class="moblink general__link--three">Одноосные прицепы с тормозами</a></li>
+                                <li><a href="/" class="moblink general__link--three">двухосные прицепы с тормозами</a></li>
+                                <li><a href="/" class="moblink general__link--three">трехосные прицепы с тормозами</a></li>
+                                <li><a href="/" class="moblink general__link--three">автовозы</a></li>
+                                <li><a href="/" class="moblink general__link--three">Для спецтехники</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="/" class="mobile__link general--off">Прицеп CAT 119</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="general__links leftgeneral">
+                          <div class="mobile__link general--on">полуприцепы</div>
+                          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                          <ul>
+                            <li><a href="/" class="moblink general__link--two">Низкорамные Платформы</a></li>
+                            <li><a href="/" class="moblink general__link--two">Платформы АПС Стройремавто 554438</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="/" class="mobile__link general--up leftgeneral">Автобусы и микроавтобусы</a></li>
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Такси</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link">Популярные модели такси</a></li>
+                        <li><a href="/" class="moblink general__link">премиум-такси</a></li>
+                        <li><a href="/" class="moblink general__link">премиум-такси с личным водителем</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/" class="mobile__link general--up leftgeneral">Легковые автомобили</a></li>
+                    <li><a href="/" class="mobile__link general--up leftgeneral">Мототехника</a></li>
+                  </ul>
+                </li>        
+              </ul>
+            </nav>
+          </div>
+          <!-- /.left__menu -->
+        </div>
+        <div class="col-lg-9 col-md-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Юридические лица</li>
+            </ol>
+          </nav>
+          <!-- /.managers -->
+          <section class="news">
+            <div class="terms__title">
+              <h2 class="terms__title--text">Новости</h2>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/news.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">КАМАЗы с субсидией от Минпромторга</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Спецтехника на базе шасси КАМАЗ широко применяется в различных отраслях промышленности.</p>
+                      <p class="infonews__text news__text">Небольшой дайджест отгрузок автотранспорта за два дня этой рабочей недели</p>
+                      <p class="infonews__text news__text">Торговая компания постепенно пополняет парк техники для сбора и ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/track.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">КАМАЗы для сельхозпредприятия со скидкой от Минпромторга</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Автомобили КАМАЗ 45143 переданы в лизинг сельскохозяйственному предприятию Шарканского района Удмуртии.</p>
+                      <p class="infonews__text news__text">Грузовая техника позволяет оперативно решать задачи по заготовке кормов, уборке урожая, заготовке и подвозу силоса. Самосвалы объемом кузова 15,2 куб.м. с надстроенными бортами имеют возможность двухсторонней боковой ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/car.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">Новый Audi A6</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Автомобили КАМАЗ 45143 переданы в лизинг сельскохозяйственному предприятию Шарканского района Удмуртии.</p>
+                      <p class="infonews__text news__text">Грузовая техника позволяет оперативно решать задачи по заготовке кормов, уборке урожая, заготовке и подвозу силоса. Самосвалы объемом кузова 15,2 куб.м. с надстроенными бортами имеют возможность двухсторонней боковой ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/news.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">КАМАЗы с субсидией от Минпромторга</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Спецтехника на базе шасси КАМАЗ широко применяется в различных отраслях промышленности.</p>
+                      <p class="infonews__text news__text">Небольшой дайджест отгрузок автотранспорта за два дня этой рабочей недели</p>
+                      <p class="infonews__text news__text">Торговая компания постепенно пополняет парк техники для сбора и ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/track.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">КАМАЗы для сельхозпредприятия со скидкой от Минпромторга</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Автомобили КАМАЗ 45143 переданы в лизинг сельскохозяйственному предприятию Шарканского района Удмуртии.</p>
+                      <p class="infonews__text news__text">Грузовая техника позволяет оперативно решать задачи по заготовке кормов, уборке урожая, заготовке и подвозу силоса. Самосвалы объемом кузова 15,2 куб.м. с надстроенными бортами имеют возможность двухсторонней боковой ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/car.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">Новый Audi A6</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Автомобили КАМАЗ 45143 переданы в лизинг сельскохозяйственному предприятию Шарканского района Удмуртии.</p>
+                      <p class="infonews__text news__text">Грузовая техника позволяет оперативно решать задачи по заготовке кормов, уборке урожая, заготовке и подвозу силоса. Самосвалы объемом кузова 15,2 куб.м. с надстроенными бортами имеют возможность двухсторонней боковой ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/news.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">КАМАЗы с субсидией от Минпромторга</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Спецтехника на базе шасси КАМАЗ широко применяется в различных отраслях промышленности.</p>
+                      <p class="infonews__text news__text">Небольшой дайджест отгрузок автотранспорта за два дня этой рабочей недели</p>
+                      <p class="infonews__text news__text">Торговая компания постепенно пополняет парк техники для сбора и ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/track.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">КАМАЗы для сельхозпредприятия со скидкой от Минпромторга</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Автомобили КАМАЗ 45143 переданы в лизинг сельскохозяйственному предприятию Шарканского района Удмуртии.</p>
+                      <p class="infonews__text news__text">Грузовая техника позволяет оперативно решать задачи по заготовке кормов, уборке урожая, заготовке и подвозу силоса. Самосвалы объемом кузова 15,2 куб.м. с надстроенными бортами имеют возможность двухсторонней боковой ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/car.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">Новый Audi A6</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Автомобили КАМАЗ 45143 переданы в лизинг сельскохозяйственному предприятию Шарканского района Удмуртии.</p>
+                      <p class="infonews__text news__text">Грузовая техника позволяет оперативно решать задачи по заготовке кормов, уборке урожая, заготовке и подвозу силоса. Самосвалы объемом кузова 15,2 куб.м. с надстроенными бортами имеют возможность двухсторонней боковой ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/news.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">КАМАЗы с субсидией от Минпромторга</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Спецтехника на базе шасси КАМАЗ широко применяется в различных отраслях промышленности.</p>
+                      <p class="infonews__text news__text">Небольшой дайджест отгрузок автотранспорта за два дня этой рабочей недели</p>
+                      <p class="infonews__text news__text">Торговая компания постепенно пополняет парк техники для сбора и ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/track.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">КАМАЗы для сельхозпредприятия со скидкой от Минпромторга</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Автомобили КАМАЗ 45143 переданы в лизинг сельскохозяйственному предприятию Шарканского района Удмуртии.</p>
+                      <p class="infonews__text news__text">Грузовая техника позволяет оперативно решать задачи по заготовке кормов, уборке урожая, заготовке и подвозу силоса. Самосвалы объемом кузова 15,2 куб.м. с надстроенными бортами имеют возможность двухсторонней боковой ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row news-card">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="news__image">
+                  <img src="img/legal/car.jpg" alt="newsimage" class="news__img">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="infonews news__info">
+                  <div class="infonews__title">
+                    <h2 class="infonews__title--text news__title--text">Новый Audi A6</h2>
+                  </div>
+                  <div class="infonews__subtitle">
+                    <span class="infonews__subtitle--text">
+                      <p class="infonews__text news__text">Автомобили КАМАЗ 45143 переданы в лизинг сельскохозяйственному предприятию Шарканского района Удмуртии.</p>
+                      <p class="infonews__text news__text">Грузовая техника позволяет оперативно решать задачи по заготовке кормов, уборке урожая, заготовке и подвозу силоса. Самосвалы объемом кузова 15,2 куб.м. с надстроенными бортами имеют возможность двухсторонней боковой ..</p>
+                    </span>
+                  </div>
+                  <div class="infonews__date">
+                    <span class="infonews__date--text">22.05.2020</span>
+                  </div>
+                  <div class="newsbtn infonews__link">
+                    <div class="gallerybtn__text">
+                      <span class="gallerybtn--text">Читать дальше</span>
+                    </div>
+                    <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /.news -->
+          <section class="pagination">
+            <div class="pagination">
+              <a href="#">&#8249;</a>
+              <a href="#">1</a>
+              <a class="active" href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&#8250;</a>
+            </div>
+          </section>
+          <!-- /.pagination -->
+        </div>
+      </div>
+      <section class="equip">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+              <div class="equipment">
+                <img src="img/hero/special.svg" alt="special" class="equipment__image">
+                <span class="equipment__text">Спецтехника</span>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+              <div class="equipment">
+                <img src="img/hero/wood.svg" alt="wood" class="equipment__image">
+                <span class="equipment__text">Лесная техника</span>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+              <div class="equipment">
+                <img src="img/hero/Road.svg" alt="Road" class="equipment__image">
+                <span class="equipment__text">Дорожно-строительная техника</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </section>
+  </main>
+  <footer class="footer__block">
+    <section class="footer__form">
+      <div class="form">
+        <div class="form__title">
+          <h3 class="form__title--text">Обратная связь</h3>
+        </div>
+        <div class="form__subtitle">
+          <span class="form__subtitle--text">Введите Ваши контактные данные и наш менеджер свяжется с Вами в скорем времени.</span>
+        </div>
+        <div class="form-group" id="form-select">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Юридическое лицо</option>
+            <option>Физическое лицо</option>
+          </select>
+          <img src="/img/footer/formarrow.svg" alt="formarrow" class="form__ico" id="form__ico">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="Имя">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="Адрес электронной почты">
+        </div>
+        <div class="form-group">
+          <input type="phone" class="form-control" id="phone" placeholder="+375291234567">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control form-control--textarea" id="textarea" rows="4"></textarea>
+        </div>
+        <div class="form__btn">
+          <button type="submit" class="btn form__button">Отправить</button>
+        </div>
+        <div class="policy form__policy">
+          <span class="policy__text">Нажимая кнопку "Отправить", вы соглашаетесь с<a href="/" class="policy__link"> политикой конфиденциальности.</a></span>
+        </div>
+      </div>
+      <!-- /.form -->
+    </section>
+    <!-- /.footer__form -->
+    <div class="footer">
+      <div class="footer__logo">
+        <a href="/" class="footer__image">
+          <img src="img/footer/footerlogo.svg" alt="footerlogo"></a>
+      </div>
+      <div class="footer__info">
+        <div class="footer__phones">
+          <div class="footer__phone">
+            <a href="tel:+375296151919" class="footer__link"><img src="img/footer/phone.svg" alt="footer-phone" class="footer-icon">
+            <span class="footer__text">+375 (29) 615-19-19</span>
+            </a>
+          </div>
+          <div class="footer__phone">
+            <a href="tel:+375296141919" class="footer__link"><img src="img/footer/phone.svg" alt="footer-phone" class="footer-icon">
+            <span class="footer__text">+375 (29) 614-19-19</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__adress">
+          <a href="/" class="footer__link"><img src="img/footer/adress.svg" alt="footer-adress">
+          <span class="footer__adress--text">Минск, ул. Смолячкова, 4/105</span>
+          </a>
+        </div>
+        <div class="footer__links">
+          <a href="https://www.facebook.com/Status-leasing-2500773139950993/" class="social__facebook" target="_blank"><img class="img-svg" src="img/header/Facebook.svg" alt="facebook" ></a>
+          <a href="https://www.instagram.com/status_leasing/" class="socail__instagram" target="_blank"><img class="img-svg" src="img/header/instagram.svg" alt="instagram"></a>
+          <a href="https://vk.com/club184781168" class="social__vk" target="_blank"><img class="img-svg" src="img/header/Vk.svg" alt="vk"></a>
+        </div>
+        <div class="footer__text">
+          <span class="footer__value">© 2020 Status Leasing</span>
+        </div>
+      </div>
+    </div>
+    <!-- /.footer -->
+  </footer>
+  <!-- /.footer__block -->
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

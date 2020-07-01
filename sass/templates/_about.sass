@@ -1,0 +1,40 @@
+.about
+  padding-top: 120px
+  padding-bottom: 120px
+  background-image: url('../img/about/about.jpg')
+  &__info
+    display: flex
+    align-items: center
+    flex-direction: column
+  &__title
+    margin-bottom: 60px
+    &--text
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 120%
+      text-align: center
+      letter-spacing: 0.08em
+      text-transform: uppercase
+      color: #FAFAFA
+.article
+  display: flex
+  // justify-content: flex-start
+  // align-items: center
+  flex-direction: column
+  // margin: 0
+  &__text
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 120%
+    letter-spacing: 0.04em
+    color: #FAFAFA
+  &__image
+    margin-right: 10px
+
+
+.about__article:not(:last-child)
+  margin-bottom: 40px

@@ -1,0 +1,123 @@
+.mobile
+  display: none
+  padding: 0 20px 40px 20px
+  position: fixed
+  top: 80px
+  right: 0
+  background-color: #fff
+  width: 100%
+  z-index: 19
+  flex-direction: column
+  display: none
+  overflow-y: scroll
+  height: 60%
+  &-active
+    display: block
+  &__phone
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-top: 30px
+    margin-bottom: 20px
+  &__adress
+    margin-bottom: 20px
+  &__social
+    margin-bottom: 30px
+  &__search
+    position: relative
+    margin-bottom: 30px
+  &__input
+    width: 100%
+    border: 1px solid #D2D2D1
+    box-sizing: border-box
+    border-radius: 5px
+    padding: 16px 24px 14px 24px
+  &__image
+    position: absolute
+    top: 13px
+    right: 20px
+.moblink
+  font-family: Roboto Condensed
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 120%
+  display: flex
+  align-items: center
+  letter-spacing: 0.04em
+  text-transform: uppercase
+  color: #1D1D1D
+.mobile
+  &__link
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: #1D1D1D
+    display: flex
+    flex-direction: column
+    // margin-bottom: 15px
+    // margin-top: 15px
+    padding-top: 15px
+    padding-bottom: 15px
+  
+.general__links,
+.once__links
+  position: relative
+.arrowed
+  position: absolute
+  top: 20px
+  right: 15px
+.general__links
+  color: #000
+.link
+  &__page
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: #1D1D1D
+    display: none
+    &--active
+      display: block
+
+.general
+  &__list
+    display: none
+    &--active
+      display: block
+  &__link
+    visibility: hidden
+    opacity: 0
+    display: none
+    &--active
+      visibility: visible
+      opacity: 1
+      display: block
+  &__link
+    &--two,
+    &--three
+      visibility: hidden
+      opacity: 0
+      display: none
+      &--active
+        visibility: visible
+        opacity: 1
+        display: block
+  &--on,
+  &--off
+    display: none
+    &-active
+      display: block
+  
+.arrowed
+  transform: rotate(180deg)
+  &--active
+    transform: rotate(0deg)
+
