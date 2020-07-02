@@ -644,7 +644,7 @@ template {
 }
 
 .hero {
-  padding-top: 120px;
+  padding-top: 118px;
   padding-bottom: 120px;
 }
 
@@ -869,6 +869,14 @@ template {
   border-radius: 10px;
   position: relative;
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.stocks__cards:hover {
+  -webkit-filter: brightness(77%);
+          filter: brightness(77%);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .stocks__title--text {
@@ -970,12 +978,6 @@ template {
 .stock__iconbtn {
   width: 7px;
   margin-bottom: 2px;
-}
-
-.stocks__image:hover {
-  -webkit-filter: brightness(77%);
-          filter: brightness(77%);
-  border-radius: 10px;
 }
 
 .work {
