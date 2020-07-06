@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Лесовозы</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__info">
+        <div class="logo header__logo">
+          <a href="#"><img src="img/header/logo.png" alt="logo" class="logo__image"></a>
+        </div>
+        <div class="header-information">
+          <div class="header__phones">
+            <a href="tel:+375296151919" class="phones">
+              <img class="img-svg" src="img/header/phone.svg" alt="phone" class="phones__image" id="phoneone">
+              <span class="phones__text">+375 (29) 615-19-19</span>
+            </a>
+            <a href="tel:+375296141919" class="phones">
+              <img class="img-svg" src="img/header/phone.svg" alt="phone" class="phones__image" id="phonetwo">
+              <span class="phones__text">+375 (29) 614-19-19</span>
+            </a>
+          </div>
+          
+          <div class="header__adress">
+            <a href="/contacts" class="adress">
+              <img class="img-svg" src="img/header/adress.svg" alt="adress" class="adress__image">
+              <span class="ardess__text">Минск, ул. Смолячкова, 4/105</span>
+            </a>
+          </div>
+          <div class="header__social social">
+            <a href="https://www.facebook.com/Status-leasing-2500773139950993/" class="social__facebook" target="_blank"><img class="img-svg" src="img/header/Facebook.svg" alt="facebook" ></a>
+            <a href="https://www.instagram.com/status_leasing/" class="socail__instagram" target="_blank"><img class="img-svg" src="img/header/instagram.svg" alt="instagram"></a>
+            <a href="https://vk.com/club184781168" class="social__vk" target="_blank"><img class="img-svg" src="img/header/Vk.svg" alt="vk"></a>
+          </div>
+          <div class="header__search">
+            <img class="img-svg" src="img/header/search.svg" alt="search" class="search__image" id="search__image">
+            <!-- <input type="search" class="search" id="search" placeholder="Поиск"> -->
+            <div class="search__block" id="search__block">
+              <input type="search" class="search__input" placeholder="Поиск" id="text" name="form-text">
+              <img src="img/header/search.svg" alt="search" class="search-image" id="search-image">
+            </div>
+          </div>
+          <div class="header__enter">
+            <span class="enter">Вход</span>
+          </div>
+        </div>
+        <!-- /.header-information -->
+        <div class="burger">
+          <div href="#" class="menu__btn">
+            <span></span>
+          </div>
+        </div>
+        <!-- /.header__burgs -->
+        <div class="header__telephone">
+          <a href="tel:+375290000000" class="telephone"><img src="img/mobheader/phone.svg" alt="phone"></a>
+        </div>
+
+      </div>
+      <!-- /.header__info -->
+      <nav class="header__nav">
+          <ul class="nav">
+            <li><a href="/" class="nav__link">Юридическим лицам</a></li>
+            <li><a href="/" class="nav__link">Физическим лицам</a></li>
+            <li><a href="/" class="nav__link">Акции и спецпредложения</a></li>
+            <li><a href="/" class="nav__link">Частые вопросы</a></li>
+            <li><a href="/" class="nav__link">КОнтакты</a></li>
+            <li><a href="/" class="nav__link">О компании</a></li>
+          </ul>
+          <!-- /.nav -->
+        </nav>
+      <!-- /.nav header__nav -->
+    </div>
+    <!-- /.container -->
+
+    <nav class="mobile">
+      <ul class="mobile__links">
+        <li class="legal once__links"><div class="mobile__link general">Юридическим лицам</div> 
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+          <ul class="general__list">
+            <li class="general__links">
+              <a href="/" class="moblink link__page">Юридическим лицам</a>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Грузовой транспорт</div> 
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li><a href="/" class="moblink general__link">Грузовой транспорт до 3,5 тонн</a></li>
+                <li><a href="/" class="moblink general__link">Грузовой транспорт свыше 3,5 тонн</a></li>
+                <li><a href="/" class="moblink general__link">Седельные тягачи</a></li>
+              </ul>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Спецтехника</div>
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li><a href="/" class="moblink general__link">Дорожно-строительная техника</a></li>
+                <li><a href="/" class="moblink general__link">Грузовой транспорт свыше 3,5 тонн</a></li>
+                <li><a href="/" class="moblink general__link">экскаваторы</a></li>
+                <li><a href="/" class="moblink general__link">краны</a></li>
+                <li><a href="/" class="moblink general__link">Подъемники и автовышки</a></li>
+                <li><a href="/" class="moblink general__link">Илососные машины</a></li>
+                <li><a href="/" class="moblink general__link">Экскаваторы-погрузчики</a></li>
+                <li><a href="/" class="moblink general__link">погрузчики</a></li>
+                <li><a href="/" class="moblink general__link">Автобетоно-смесители</a></li>
+              </ul>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Лесная техника</div>
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li><a href="/" class="moblink general__link">Машины транспортно-погрузочные лесные</a></li>
+                <li><a href="/" class="moblink general__link">лесовозы</a></li>
+                <li><a href="/" class="moblink general__link">трактора трелевочные</a></li>
+                <li><a href="/" class="moblink general__link">харвестеры </a></li>
+                <li><a href="/" class="moblink general__link">форвардеры</a></li>
+                <li class="general__links">
+                  <div class="mobile__link general--on">Гидроманипуляторы</div>
+                  <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                  <ul>
+                    <li><a href="/" class="moblink general__link--two">Гидроманипуляторы с кабиной</a></li>
+                    <li><a href="/" class="moblink general__link--two">Гидроманипуляторы без кабины</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Прицепы и полуприцепы</div>
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li class="general__links">
+                  <div class="mobile__link general--on">прицепы</div>
+                  <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                  <ul>
+                    <li class="general__links">
+                      <div class="mobile__link general--off">Для категории B</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link--three">Одноосные прицепы Fisso</a></li>
+                        <li><a href="/" class="moblink general__link--three">двухосные прицепы Fisso</a></li>
+                        <li><a href="/" class="moblink general__link--three">Для мототехники</a></li>
+                        <li><a href="/" class="moblink general__link--three">Рекламные прицепы</a></li>
+                        <li><a href="/" class="moblink general__link--three">Профессиональные двухосные прицепы с тормозами</a></li>
+                        <li><a href="/" class="moblink general__link--three">автовозы</a></li>
+                        <li><a href="/" class="moblink general__link--three">трехосные прицепы с тормозами</a></li>
+                      </ul>
+                    </li>
+                    <li class="general__links">
+                      <div class="mobile__link general--off">Для категории E</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link--three">Одноосные прицепы с тормозами</a></li>
+                        <li><a href="/" class="moblink general__link--three">двухосные прицепы с тормозами</a></li>
+                        <li><a href="/" class="moblink general__link--three">трехосные прицепы с тормозами</a></li>
+                        <li><a href="/" class="moblink general__link--three">автовозы</a></li>
+                        <li><a href="/" class="moblink general__link--three">Для спецтехники</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/" class="mobile__link general--off">Прицеп CAT 119</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="general__links">
+                  <div class="mobile__link general--on">полуприцепы</div>
+                  <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                  <ul>
+                    <li><a href="/" class="moblink general__link--two">Низкорамные Платформы</a></li>
+                    <li><a href="/" class="moblink general__link--two">Платформы АПС Стройремавто 554438</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/" class="mobile__link general--up">Автобусы и микроавтобусы</a></li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Такси</div>
+              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+              <ul>
+                <li><a href="/" class="moblink general__link">Популярные модели такси</a></li>
+                <li><a href="/" class="moblink general__link">премиум-такси</a></li>
+                <li><a href="/" class="moblink general__link">премиум-такси с личным водителем</a></li>
+              </ul>
+            </li>
+            <li><a href="/" class="mobile__link general--up">Легковые автомобили</a></li>
+            <li><a href="/" class="mobile__link general--up">Мототехника</a></li>
+          </ul>
+        </li>
+        <li class="physical once__links">
+          <div class="mobile__link general">Физическим лицам</div>
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+          <ul class="general__list">
+            <li class="general__links">
+              <a href="/" class="moblink link__page">Физическим лицам</a>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Легковые автомобили</div> 
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Мотоциклы</div> 
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Прицепы для мототехники</div> 
+            </li>
+          </ul>
+        </li>
+        <li class="sale once__links">
+          <div class="mobile__link general">Акции и спецпредложения</div>
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+          <ul class="general__list">
+            <li class="general__links">
+              <a href="/" class="moblink link__page">Юридическим лицам</a>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Физическим лицам</div> 
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Распродажа</div> 
+            </li>
+          </ul>
+        </li>
+        <li class="question once__links">
+          <div class="mobile__link general">Частые вопросы</div>
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+          <ul class="general__list">
+            <li class="general__links">
+              <a href="/" class="moblink link__page">Юридическим лицам</a>
+            </li>
+            <li class="general__links">
+              <div class="mobile__link general--up">Физическим лицам</div> 
+            </li>
+          </ul>
+        </li>
+        <li class="contacts once__links">
+          <div class="mobile__link general">Контакты</div>
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+        </li>
+        <li class="mobile__link about-company once__links">О компании
+          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+        </li>
+  
+      </ul>
+      <div class="mobile__phone">
+        <a href="tel:+375296151919" class="phones">
+          <img class="img-svg" src="img/header/phone.svg" alt="phone" class="phones__image" id="phoneone">
+          <span class="phones__text">+375 (29) 615-19-19</span>
+        </a>
+        <a href="tel:+375296141919" class="phones">
+          <img class="img-svg" src="img/header/phone.svg" alt="phone" class="phones__image" id="phonetwo">
+          <span class="phones__text">+375 (29) 614-19-19</span>
+        </a>
+      </div>
+      <div class="mobile__adress">
+        <a href="/contacts" class="adress">
+          <img class="img-svg" src="img/header/adress.svg" alt="adress" class="adress__image">
+          <span class="ardess__text">Минск, ул. Смолячкова, 4/105</span>
+        </a>
+      </div>
+      <div class="mobile__social">
+        <a href="https://www.facebook.com/Status-leasing-2500773139950993/" class="social__facebook" target="_blank"><img class="img-svg" src="img/header/Facebook.svg" alt="facebook" ></a>
+        <a href="https://www.instagram.com/status_leasing/" class="socail__instagram" target="_blank"><img class="img-svg" src="img/header/instagram.svg" alt="instagram"></a>
+        <a href="https://vk.com/club184781168" class="social__vk" target="_blank"><img class="img-svg" src="img/header/Vk.svg" alt="vk"></a>
+      </div>
+      <div class="mobile__search">
+        <div class="mobile__search" id="mobile-search">
+          <input type="search" class="mobile__input" placeholder="Поиск" id="text" name="form-text">
+          <img src="img/header/search.svg" alt="search" class="mobile__image" id="mobile-image">
+        </div>
+      </div>
+      <div class="mobile__enter">
+        <span class="enter">Вход</span>
+      </div>
+    </nav>
+    <!-- /.header-mobile -->
+  </header>
+  <!-- /.header -->
+
+  <main>
+    <div class="container">
+      <div class="row legals">
+        <div class="col-lg-3 col-md-3 leftmenu">
+          <div class="left__menu">
+            <nav class="left__menu--mobile">
+              <ul class="mobile__links">
+                <li class="legal once__links">
+                  <ul class="general__list leftlinks">
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Грузовой транспорт</div> 
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link">Грузовой транспорт до 3,5 тонн</a></li>
+                        <li><a href="/" class="moblink general__link">Грузовой транспорт свыше 3,5 тонн</a></li>
+                        <li><a href="/" class="moblink general__link">Седельные тягачи</a></li>
+                      </ul>
+                    </li>
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Спецтехника</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link">Дорожно-строительная техника</a></li>
+                        <li><a href="/" class="moblink general__link">Грузовой транспорт свыше 3,5 тонн</a></li>
+                        <li><a href="/" class="moblink general__link">экскаваторы</a></li>
+                        <li><a href="/" class="moblink general__link">краны</a></li>
+                        <li><a href="/" class="moblink general__link">Подъемники и автовышки</a></li>
+                        <li><a href="/" class="moblink general__link">Илососные машины</a></li>
+                        <li><a href="/" class="moblink general__link">Экскаваторы-погрузчики</a></li>
+                        <li><a href="/" class="moblink general__link">погрузчики</a></li>
+                        <li><a href="/" class="moblink general__link">Автобетоно-смесители</a></li>
+                      </ul>
+                    </li>
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Лесная техника</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link">Машины транспортно-погрузочные лесные</a></li>
+                        <li><a href="/" class="moblink general__link">лесовозы</a></li>
+                        <li><a href="/" class="moblink general__link">трактора трелевочные</a></li>
+                        <li><a href="/" class="moblink general__link">харвестеры </a></li>
+                        <li><a href="/" class="moblink general__link">форвардеры</a></li>
+                        <li class="general__links leftgeneral">
+                          <div class="mobile__link general--on">Гидроманипуляторы</div>
+                          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                          <ul>
+                            <li><a href="/" class="moblink general__link--two">Гидроманипуляторы с кабиной</a></li>
+                            <li><a href="/" class="moblink general__link--two">Гидроманипуляторы без кабины</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Прицепы и полуприцепы</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li class="general__links leftgeneral">
+                          <div class="mobile__link general--on">прицепы</div>
+                          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                          <ul>
+                            <li class="general__links leftgeneral">
+                              <div class="mobile__link general--off">Для категории B</div>
+                              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                              <ul>
+                                <li><a href="/" class="moblink general__link--three">Одноосные прицепы Fisso</a></li>
+                                <li><a href="/" class="moblink general__link--three">двухосные прицепы Fisso</a></li>
+                                <li><a href="/" class="moblink general__link--three">Для мототехники</a></li>
+                                <li><a href="/" class="moblink general__link--three">Рекламные прицепы</a></li>
+                                <li><a href="/" class="moblink general__link--three">Профессиональные двухосные прицепы с тормозами</a></li>
+                                <li><a href="/" class="moblink general__link--three">автовозы</a></li>
+                                <li><a href="/" class="moblink general__link--three">трехосные прицепы с тормозами</a></li>
+                              </ul>
+                            </li>
+                            <li class="general__links leftgeneral">
+                              <div class="mobile__link general--off">Для категории E</div>
+                              <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                              <ul>
+                                <li><a href="/" class="moblink general__link--three">Одноосные прицепы с тормозами</a></li>
+                                <li><a href="/" class="moblink general__link--three">двухосные прицепы с тормозами</a></li>
+                                <li><a href="/" class="moblink general__link--three">трехосные прицепы с тормозами</a></li>
+                                <li><a href="/" class="moblink general__link--three">автовозы</a></li>
+                                <li><a href="/" class="moblink general__link--three">Для спецтехники</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="/" class="mobile__link general--off">Прицеп CAT 119</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="general__links leftgeneral">
+                          <div class="mobile__link general--on">полуприцепы</div>
+                          <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                          <ul>
+                            <li><a href="/" class="moblink general__link--two">Низкорамные Платформы</a></li>
+                            <li><a href="/" class="moblink general__link--two">Платформы АПС Стройремавто 554438</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="/" class="mobile__link general--up leftgeneral">Автобусы и микроавтобусы</a></li>
+                    <li class="general__links leftgeneral">
+                      <div class="mobile__link general--up">Такси</div>
+                      <img src="img/mobheader/arrowed.svg" alt="arrow" class="arrowed">
+                      <ul>
+                        <li><a href="/" class="moblink general__link">Популярные модели такси</a></li>
+                        <li><a href="/" class="moblink general__link">премиум-такси</a></li>
+                        <li><a href="/" class="moblink general__link">премиум-такси с личным водителем</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/" class="mobile__link general--up leftgeneral">Легковые автомобили</a></li>
+                    <li><a href="/" class="mobile__link general--up leftgeneral">Мототехника</a></li>
+                  </ul>
+                </li>        
+              </ul>
+            </nav>
+          </div>
+          <!-- /.left__menu -->
+        </div>
+        <div class="col-lg-9 col-md-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Юридические лица</li>
+            </ol>
+          </nav>
+          <section class="timber">
+            <div class="timber__title">
+              <h3 class="timber__title--text">Лесовозы</h3>
+            </div>
+            <div class="container">
+              <div class="row nomargin">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="gallery__card" onclick="cardDialog(this)">
+                    <img src="img/timber/1.jpg" alt="cardimage" class="gallery__card--image">
+                    <img src="img/gallery/hd.jpg" alt="cardimagebig" class="gallery__none">
+                    <div class="gallery__card--title">
+                      <span class="gallery__card--text">Harley-Davidson Sportster, 2009</span>
+                    </div>
+                    <div class="gallerybtn gallery__card--button">
+                      <div class="gallerybtn__text">
+                        <span class="gallerybtn--text">ПОдробнее</span>
+                      </div>
+                      <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="gallery__card" onclick="cardDialog(this)">
+                    <img src="img/legal/track.jpg" alt="cardimage" class="gallery__card--image">
+                    <div class="gallery__card--title">
+                      <span class="gallery__card--text">подпись</span>
+                    </div>
+                    <div class="gallerybtn gallery__card--button">
+                      <div class="gallerybtn__text">
+                        <span class="gallerybtn--text">ПОдробнее</span>
+                      </div>
+                      <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="gallery__card" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/timber/3.jpg" alt="cardimage" class="gallery__card--image">
+                    <div class="gallery__card--title">
+                      <span class="gallery__card--text">подпись</span>
+                    </div>
+                    <div class="gallerybtn gallery__card--button">
+                      <div class="gallerybtn__text">
+                        <span class="gallerybtn--text">ПОдробнее</span>
+                      </div>
+                      <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="gallery__card" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/timber/4.jpg" alt="cardimage" class="gallery__card--image">
+                    <div class="gallery__card--title">
+                      <span class="gallery__card--text">Harley-Davidson Sportster, 2009</span>
+                    </div>
+                    <div class="gallerybtn gallery__card--button">
+                      <div class="gallerybtn__text">
+                        <span class="gallerybtn--text">ПОдробнее</span>
+                      </div>
+                      <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="gallery__card" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/timber/5.jpg" alt="cardimage" class="gallery__card--image">
+                    <div class="gallery__card--title">
+                      <span class="gallery__card--text">подпись</span>
+                    </div>
+                    <div class="gallerybtn gallery__card--button">
+                      <div class="gallerybtn__text">
+                        <span class="gallerybtn--text">ПОдробнее</span>
+                      </div>
+                      <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="gallery__card" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/timber/6.jpg" alt="cardimage" class="gallery__card--image">
+                    <div class="gallery__card--title">
+                      <span class="gallery__card--text">подпись</span>
+                    </div>
+                    <div class="gallerybtn gallery__card--button">
+                      <div class="gallerybtn__text">
+                        <span class="gallerybtn--text">ПОдробнее</span>
+                      </div>
+                      <img src="img/legal/next.svg" alt="next" class="gallerybtn__image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 offset-md-0 col-sm-6 offset-sm-3">
+                <div class="managers__button managers__button--gallery timber__btn">
+                  <button class="managers__btn">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+            <!-- /.container -->
+          </section>
+          <!-- /.gallery -->
+          <section class="info-trucks timber-trucks">
+            <div class="trucks">
+              <div class="tab">
+                <button class="tablinks timber__tablinks" onclick="openCity(event, 'MAN')">Шасси</button>
+                <button class="tablinks timber__tablinks" onclick="openCity(event, 'Scania')">Стойки (коники)</button>
+                <button class="tablinks timber__tablinks" onclick="openCity(event, 'Volvo')">Осветительные приборы</button>
+                <!-- <button class="tablinks" onclick="openCity(event, 'Mercedes')">Mercedes-benz</button>
+                <button class="tablinks" onclick="openCity(event, 'daf')">daf</button>
+                <button class="tablinks" onclick="openCity(event, 'ford')">ford trucks f-max</button> -->
+              </div>
+              <div class="mobtab">
+                <!-- <img src="img/legal/ico.svg" alt="ico" class="mobtabimage"> -->
+                <select name="mobtab" id="mobtab" class="mobtabs" onchange="openCityMob(event, value)">
+                  <option class="mobtablinks" value="MAN">Шасси</option>
+                  <option class="mobtablinks" value="Scania">Стойки (коники)</option>
+                  <option class="mobtablinks" value="Volvo">Осветительные приборы</option>
+                  <!-- <option class="mobtablinks" value="Mercedes">Mercedes-benz</option>
+                  <option class="mobtablinks" value="daf">daf</option>
+                  <option class="mobtablinks" value="ford">ford trucks f-max</option> -->
+                </select>
+              </div>
+              <div id="MAN" class="tabcontent">
+                <h3 class="tab__title">Шасси</h3>
+                <p class="tab__subtitle">Чтобы обеспечить в темное время суток необходимый уровень освещения  на объекте, при работе экскаватора-погрузчика, машина должна быть оснащена надежными фарами рабочего света. Фары рабочего света (ксенон или светодиод) установленные на спецтехнику дают возможность без привлечения сторонних ресурсов организовать должное освещение рабочего места.</p>
+                <p class="tab__subtitle">На спецтехнику устанавливаются фары известных марок Nordic lights,Schberg, Aurora, Oledone.Полноценное освещение рабочей зоны обеспечивает максимально комфортные условия для оператора, и непосредственно влияет на увеличение производительности техники, кроме того повышает безопасность работ при землеройных работах. Фары рабочего света создают яркое световое пятно большой площади за счет использования специальных линз-рассекателей.</p>
+                <p class="tab__subtitle">Если говорить о светодиодном освещении, то преимуществами являются низкое энергопотребление,высокая светоотдача, большой срок службы по сравнению с галогенными и ксеноновыми лампами. Спецтехника работает в тяжелых условиях и фонари должны быть устойчивы к вибрации, должны быть устойчивы к механическим воздействиям. Светодиодные фары оправдали доверие мнгогих компаний, использующих их в самых  сложных условиях. Практически все виды ламп под воздействием вибрации достаточно быстро приходят в негодность. Корпус фар, пригодных для установки на спецтехнику выполнен из литого алюминия , устойчивого к корозии, механическим повреждениям.А герметичный корпус надежно защищает светодиоды от попадания влаги и грязи. Спецтехника работает в достаточно сложных ландшафтных условиях, выдерживая удары и вибрации машины работают по много часов в день и не останавливаются даже в темное время суток. Ни плохие условия видимости, ни изменения температуры и погодных условий, ни вибрации ни удары не должны влиять на результаты работы.</p>
+                <p class="tab__subtitle">Фары используют для освещения рабочей зоны, а не для освещенгия дороги при перемещении.Поэтому для таких задач существуют специальные светодиодные фары рабочего света. Фары устанвавливаются на макисмально возможной высоте от 1,5-5 метров и освещают рабочаю зону в радиусе до до 50 м. от места установки.</p>
+              </div>
+              <div id="Scania" class="tabcontent">
+                <h3 class="tab__title">Стойки (коники)</h3>
+                <p class="tab__subtitle">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+                <p class="tab__subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p> 
+              </div>
+              <div id="Volvo" class="tabcontent">
+                <h3 class="tab__title">Осветительные приборы</h3>
+                <p class="tab__subtitle">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+                <p class="tab__subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p> 
+              </div>
+              <!-- <div id="Mercedes" class="tabcontent">
+                <h3 class="tab__title">Mercedes</h3>
+                <p class="tab__subtitle">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+                <p class="tab__subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p> 
+              </div>
+              <div id="daf" class="tabcontent">
+                <h3 class="tab__title">daf</h3>
+                <p class="tab__subtitle">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+                <p class="tab__subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p> 
+              </div>
+              <div id="ford" class="tabcontent">
+                <h3 class="tab__title">ford</h3>
+                <p class="tab__subtitle">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+                <p class="tab__subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p> 
+              </div> -->
+            </div>
+            <!-- /.trucks -->
+          </section>
+          <!-- /.info-car -->
+          <section class="offer">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="offer__title">Мы предлагаем</h2>
+              </div>
+              <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-4 offset-sm-0 col-12 offset-0">
+                <div class="card infocar__card">
+                  <img src="img/timber/hand.svg" alt="ico-car" class="card__image">
+                  <span class="card__name">Приобретение в лизинг спецтехники в Республике Беларусь, России и Европе</span>
+                </div>
+              </div>
+              <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-4 offset-sm-0 col-12 offset-0">
+                <div class="card infocar__card">
+                  <img src="img/timber/quality.svg" alt="ico-car" class="card__image">
+                  <span class="card__name">Специальные программы с поставщиками лесной техники</span>
+                </div>
+              </div>
+              <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-4 offset-sm-0 col-12 offset-0">
+                <div class="card infocar__card">
+                  <img src="img/timber/clock.svg" alt="ico-car" class="card__image">
+                  <span class="card__name">Оперативное рассмотрение заявки и проведение сделки</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /.offer -->
+          <section class="offer-info">
+            <div class="row">
+              <div class="col-12 timber__points">
+                <div class="terms__points timber__terms--points">
+                  <ol class="oll timber--oll">
+                    <li class="terms-square"><span>13 лет надёжной работы на лизинговом рынке Беларуси</span></li>
+                    <li class="terms-square"><span>Безупречная кредитная история</span></li>
+                    <li class="terms-square"><span>1-е место по количеству переданных в лизинг легковых автомобилей (согласно докладу Ассоциации лизингодателей Беларуси за 2017 год)</span></li>
+                    <li class="terms-square timber-square"><span>Для нас все клиенты важны!</span></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 offset-md-0 col-sm-6 offset-sm-3">
+                <div class="managers__button managers__button--gallery timber__btn">
+                  <button class="managers__btn">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /.offer-info -->
+          <section class="timber__info">
+            <div class="row secondary">
+              <div class="col-lg-7 secondary">
+                <p class="legal--text">
+                  Сортиментовоз МАЗ 6303A8 наиболее востребован для вывозки и заготовки деловой древесины с лесных территорий по лесным дорогам. Зачастую древесину концентрируют на погрузочных пунктах, расположенных у лесовозных дорог. Здесь ее грузят на лесовозы, а затем вывозят потребителю, на базы и цеха переработки.
+                  Техника пользуется спросом среди лесозаготовителей: индивидуальных предпринимателей, малого бизнеса и крупных предприятий в Республике Беларусь. Также востребованы Российские КАМАЗы и импортные сортиментовозы Volvo, Skania, Man.
+                  Сортиментовоз состоит из тягового и прицепного узлов. Может представлять как одиночный автомобиль, так и автопоезд.</p>
+              </div>
+              <div class="col-lg-5">
+                <div class="legal__image">
+                  <img src="img/timber/11.jpg" alt="legalimage" class="legal--image">
+                </div>
+              </div>
+            </div>
+              <div class="terms__subtitle">
+                <h3 class="terms__subtitle--text">
+                  <p>
+                    Трехосный грузовик МАЗ 6317 оборудован рамой для крепления лесовозного оборудования и гидроманипулятора, площадкой предназначенной для укладки лесоматериалов и ограждением, защищающим кабину от возможных ударов.
+                  </p>
+                  <p>
+                    Кабина тяговой машины оснащена спальным местом, колесной формулой 6х6, ложементами, гидроманипулятором который, необходим для перемещения и складирования древесины, монтируется на заднем свесе надрамника грузовика.
+                  </p>  
+                  <p>
+                    Для защиты оператора от неблагоприятных метеорологических условий на гидроманипуляторе может быть установлена (смонтирована) закрытая кабина оператора.
+                  </p>  
+                  <p>
+                    Закрытая кабина оператора может быть оборудована:
+                  </p>  
+                </h3>
+              </div>
+              <div class="terms__points">
+                <ol class="oll">
+                  <li class="terms-square"><span>механизмом подъема;</span></li>
+                  <li class="terms-square"><span>отопительным оборудованием;</span></li>
+                  <li class="terms-square"><span>стеклоочистелем;</span></li>
+                  <li class="terms-square"><span>сигналом</span></li>
+                  <li class="terms-square"><span>крышным люком.</span></li>
+                </ol>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="buy timber__buy">
+                    <div class="buy__title">
+                      <h3 class="buy__title--text">Лесная техника производства МАЗ Республики Беларусь зарекомендовала себя внутри страны и за ее пределами.</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-12">
+                <span class="timber-text">Лесовоз марки МАЗ используется на дорогах общего пользования для транспортировки бревен на лесных дорогах при сортиментной заготовке на спец. площадках и погрузке, а также сортировке бревен в пунктах накопления и погрузки (разгрузки) древесины в железнодорожные вагоны.</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="legal__image">
+                  <img src="img/timber/12.jpg" alt="legalimage" class="legal--image">
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <p class="legal--text">Для быстрого и беспрепятственного проезда к лесосекам по болотистой местности лесозаготовители предпочитают купить МАЗ 6317X9 адаптированный к дорогам всех категорий и бездорожью, который может преодолеть даже неглубокий брод. Если местность сухая , используют МАЗ 6308A8 с обычной проходимостью.
+                  В Республике Беларусь в районах с болотистой местностью ( Мозырьском, Петриковском), либо  песчаной (Ельский, Наровлянский, Бобруйский, Березинский), клиенты соориентированы приобрести в лизинг лесовоз  МАЗ 6317X9, на широкопрофильных везде-ходных шинах. Если болото совсем глубокое автопоезд может не пройти, а прицеп забуксовать, в таких условиях водитель расцепляет прицеп, оставляя его на дороге.</p>
+              </div>
+            </div>
+            <div class="row secondary">
+              <div class="col-lg-7 secondary">
+                <p class="legal--text">Сортиментовоз МАЗ 6303A8 наиболее востребован для вывозки и заготовки деловой древесины с лесных территорий по лесным дорогам. Зачастую древесину концентрируют на погрузочных пунктах, расположенных у лесовозных дорог. Здесь ее грузят на лесовозы, а затем вывозят потребителю, на базы и цеха переработки.
+                  Техника пользуется спросом среди лесозаготовителей: индивидуальных предпринимателей, малого бизнеса и крупных предприятий в Республике Беларусь. Также востребованы Российские КАМАЗы и импортные сортиментовозы Volvo, Skania, Man.
+                  Сортиментовоз состоит из тягового и прицепного узлов. Может представлять как одиночный автомобиль, так и автопоезд.</p>
+              </div>
+              <div class="col-lg-5">
+                <div class="legal__image">
+                  <img src="img/timber/13.jpg" alt="legalimage" class="legal--image">
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /.timber__info -->
+          <section class="Hydraulic">
+            <div class="terms__title">
+              <h2 class="terms__title--text">Гидроманипуляторы</h2>
+            </div>
+            <div class="terms__subtitle">
+              <h3 class="terms__subtitle--text">
+                <p>
+                  Большое значение для водителя-оператора техники имеет грузоподъемность гидроманипулятора, расширенная рабочая зона и сокращение времени для загрузки машины бревнами. 
+                </p>
+                <p>
+                  Этому способствует манипуляторные установки. Они бывают разных видов:
+                </p>  
+              </h3>
+            </div>
+            <div class="terms__points">
+              <ol class="oll">
+                <li class="terms-square"><span>гидроманипулятор ОМТЛ-97-04 Велмаш, группа Palfinger(Велико-лукского машиностро-ительного завода) вРеспублике Беларусь представлен компа-ниями, ООО "КВ-партнер", ООО "Аксиом-групп".</span></li>
+                <li class="terms-square"><span>гидроманипулятор –  Мозырский М 7504, М-90,  М-75-04,  М-75-05  (с кабиной) ОАО «Мозырьского машиностро-ительного завода»;</span></li>
+                <li class="terms-square"><span>гидроманипулятор – Loglift 96 s представляет компания ООО «ГИДРО-АДВЕНТИС»;</span></li>
+                <li class="terms-square"><span>гидроманнипулятор – Epsilon 120Z96 можно приобрести у ООО «КВ-партнер» , ЧП «СпецТракСервис»;</span></li>
+                <li class="terms-square"><span>гидроманипулятор – МАЙМАН ММ 110-03 (ММ-110-03),  ООО «Майкопского машинострои-тельного   завода»  (Россия)  представляет компания ООО "Аксиом-групп" и компания ООО «НОКА ТЕХ»;</span></li>
+                <li class="terms-square"><span>гидроманипулятор Kesla 2010 можно приобрести у компании ООО «КВ-партнер» и в компании ЧП «СпецТракСервис»;</span></li>
+              </ol>
+            </div>
+          </section>
+          <!-- /.Hydraulic -->
+        </div>
+      </div>
+      <section class="equip">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+              <div class="equipment">
+                <img src="img/hero/special.svg" alt="special" class="equipment__image">
+                <span class="equipment__text">Спецтехника</span>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+              <div class="equipment">
+                <img src="img/hero/wood.svg" alt="wood" class="equipment__image">
+                <span class="equipment__text">Лесная техника</span>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+              <div class="equipment">
+                <img src="img/hero/Road.svg" alt="Road" class="equipment__image">
+                <span class="equipment__text">Дорожно-строительная техника</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </section>
+    </div>
+    <!-- /.container -->
+    <!-- Button trigger modal -->
+
+<!-- модальное окно карточки товара -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-header--window">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/gallery/close.svg" alt="close" class="closed">
+          </span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <div class="container">
+          <div class="row" id="content">
+            
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+        <!-- /.row -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- модальное окно карточки товара -->
+  </main>
+  <footer class="footer__block">
+    <section class="footer__form">
+      <div class="form">
+        <div class="form__title">
+          <h3 class="form__title--text">Обратная связь</h3>
+        </div>
+        <div class="form__subtitle">
+          <span class="form__subtitle--text">Введите Ваши контактные данные и наш менеджер свяжется с Вами в скорем времени.</span>
+        </div>
+        <div class="form-group" id="form-select">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Юридическое лицо</option>
+            <option>Физическое лицо</option>
+          </select>
+          <img src="/img/footer/formarrow.svg" alt="formarrow" class="form__ico" id="form__ico">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="Имя">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="Адрес электронной почты">
+        </div>
+        <div class="form-group">
+          <input type="phone" class="form-control" id="phone" placeholder="+375291234567">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control form-control--textarea" id="textarea" rows="4"></textarea>
+        </div>
+        <div class="form__btn">
+          <button type="submit" class="btn form__button">Отправить</button>
+        </div>
+        <div class="policy form__policy">
+          <span class="policy__text">Нажимая кнопку "Отправить", вы соглашаетесь с<a href="/" class="policy__link"> политикой конфиденциальности.</a></span>
+        </div>
+      </div>
+      <!-- /.form -->
+    </section>
+    <!-- /.footer__form -->
+    <div class="footer">
+      <div class="footer__logo">
+        <a href="/" class="footer__image">
+          <img src="img/footer/footerlogo.svg" alt="footerlogo"></a>
+      </div>
+      <div class="footer__info">
+        <div class="footer__phones">
+          <div class="footer__phone">
+            <a href="tel:+375296151919" class="footer__link"><img src="img/footer/phone.svg" alt="footer-phone" class="footer-icon">
+            <span class="footer__text">+375 (29) 615-19-19</span>
+            </a>
+          </div>
+          <div class="footer__phone">
+            <a href="tel:+375296141919" class="footer__link"><img src="img/footer/phone.svg" alt="footer-phone" class="footer-icon">
+            <span class="footer__text">+375 (29) 614-19-19</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__adress">
+          <a href="/" class="footer__link"><img src="img/footer/adress.svg" alt="footer-adress">
+          <span class="footer__adress--text">Минск, ул. Смолячкова, 4/105</span>
+          </a>
+        </div>
+        <div class="footer__links">
+          <a href="https://www.facebook.com/Status-leasing-2500773139950993/" class="social__facebook" target="_blank"><img class="img-svg" src="img/header/Facebook.svg" alt="facebook" ></a>
+          <a href="https://www.instagram.com/status_leasing/" class="socail__instagram" target="_blank"><img class="img-svg" src="img/header/instagram.svg" alt="instagram"></a>
+          <a href="https://vk.com/club184781168" class="social__vk" target="_blank"><img class="img-svg" src="img/header/Vk.svg" alt="vk"></a>
+        </div>
+        <div class="footer__text">
+          <span class="footer__value">© 2020 Status Leasing</span>
+        </div>
+      </div>
+    </div>
+    <!-- /.footer -->
+  </footer>
+  <!-- /.footer__block -->
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
