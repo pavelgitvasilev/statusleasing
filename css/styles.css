@@ -2154,6 +2154,7 @@ template {
 
 .terms__title {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .terms__title--text {
@@ -2387,6 +2388,28 @@ li span {
   line-height: 130%;
   text-align: center;
   color: #1D1D1D;
+}
+
+.card__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #1D1D1D;
+}
+
+.card__text--star {
+  margin-top: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 141%;
+  text-align: center;
+  color: #1D1D1D;
+  padding: 0 20px;
 }
 
 .card__adress {
@@ -2666,10 +2689,11 @@ li span {
 
 .leftgeneral {
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .leftgeneral:hover {
-  border: 1px solid #C01818;
+  border-color: #C01818;
   color: #C01818;
 }
 
@@ -2879,6 +2903,134 @@ li span {
 .equipment-seacrh {
   margin-top: 120px;
   margin-bottom: 120px;
+}
+
+.bonds__subtitle {
+  margin-bottom: 40px;
+}
+
+.bonds__subtitle--text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.bonds--square {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C01818;
+}
+
+.bonds--terms {
+  margin-bottom: 40px;
+}
+
+.bonds__card {
+  margin-bottom: 30px;
+}
+
+.bonds__name {
+  margin-top: 0;
+}
+
+.tax__info {
+  margin-bottom: 40px;
+}
+
+.tax__title {
+  margin-bottom: 20px;
+}
+
+.tax__title--text {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.tax__term {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.tax__term__term:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.buy {
+  border: 1px solid #C01818;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  padding: 45px 78px;
+}
+
+.buy__title {
+  margin-bottom: 30px;
+}
+
+.buy__title--text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #1D1D1D;
+}
+
+.buy__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buy__btn {
+  border: none;
+  width: 220px;
+  max-width: 100%;
+  height: 50px;
+  margin-right: 40px;
+  background: #C01818;
+  border-radius: 4px;
+  color: #FAFAFA;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 158.49%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: -5px;
+}
+
+.buy__btn--lacerta {
+  border: 1px solid #D6D6D3;
+  border-radius: 5px;
+  width: 220px;
+  max-width: 100%;
+  height: 50px;
+  background: url("../img/bonds/lacerta.png") center no-repeat;
 }
 
 .popcard__title {
