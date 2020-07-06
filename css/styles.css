@@ -2664,6 +2664,19 @@ li span {
   display: block;
 }
 
+.leftgeneral {
+  cursor: pointer;
+}
+
+.leftgeneral:hover {
+  border: 1px solid #C01818;
+  color: #C01818;
+}
+
+.mobile__link:hover {
+  color: #C01818;
+}
+
 .carousel-title-mob {
   display: none;
 }
@@ -2775,8 +2788,97 @@ li span {
   padding-top: 180px;
 }
 
+.search-block {
+  max-width: 440px;
+}
+
+.search-magnifier {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+.search__title {
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.search__title--text {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+}
+
+.search-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .breadcrumb {
   padding: 0;
+}
+
+.result {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.result__point--text, .result__amount--text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 141%;
+  color: #1D1D1D;
+}
+
+.result__block {
+  margin-bottom: 30px;
+}
+
+.result__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: #C01818;
+  margin-bottom: 10px;
+}
+
+.result__subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.pagination a {
+  margin: 0;
+  padding: 0 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #C01818;
+}
+
+.equipment-seacrh {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .popcard__title {
