@@ -1485,7 +1485,6 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: none;
   overflow-y: scroll;
   height: 60%;
 }
@@ -3540,6 +3539,12 @@ li span {
     margin-top: 120px;
   }
   .managers__button--gallery {
+    display: none;
+  }
+  .legals {
+    margin-top: 120px;
+  }
+  .leftmenu {
     display: none;
   }
 }
