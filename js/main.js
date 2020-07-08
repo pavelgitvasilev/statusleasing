@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 
     var bgimage = $('#search-image');
-      console.log(bgimage);
+      (bgimage);
 
     $(bgimage).click(function () { 
       $( "#search__image" ).show(600);
@@ -138,17 +138,15 @@ $(document).ready(function () {
 
 
 
-
-
   link();
 });
 
 function link() {
   let links = $('.general--on');
   if (!links.hasClass('.general--on--active')) {
-    console.log('no active');
+    ('no active');
     let a = links.parent().find('.arrowed').hide();
-    console.log(a);
+    (a);
     
   }
   
