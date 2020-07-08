@@ -2688,17 +2688,18 @@ li span {
   display: block;
 }
 
-.leftgeneral {
+.first-level {
   cursor: pointer;
   border: 1px solid transparent;
 }
 
-.leftgeneral:hover {
+.first-level:hover {
   border-color: #C01818;
   color: #C01818;
 }
 
 .mobile__link:hover {
+  cursor: pointer;
   color: #C01818;
 }
 

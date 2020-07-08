@@ -51,30 +51,41 @@ $(document).ready(function () {
   
 
   $('.general').on('click', function () {
-    console.log('click general');
     $(this).parent().find('.general__list').toggleClass('general__list--active')
     $(this).parent().children('.arrowed').toggleClass('arrowed--active');
     $(this).parent().find('.general--up').css('margin-left', 15);
-    
   })
 
   $('.general--up').on('click', function () {
+    let arrowOn = $(this).parent().find('.general--on');
     $(this).parent().find('.general__link').toggleClass('general__link--active');
     $(this).parent().find('.general__link--active').css('margin-left', 25);
     $(this).parent().find('.general__link--active').css('margin-bottom',10);
     $(this).parent().find('.general--on').toggleClass('general--on-active');
     $(this).parent().find('.general--on').css('margin-left', 30);
     $(this).parent().find('.arrowed').toggleClass('arrowed--active'); //OK
+    if (arrowOn.parent().children('.arrowed').is(':hidden'))
+    {
+      arrowOn.parent().children('.arrowed').show();
+    } else {
+      arrowOn.parent().children('.arrowed').hide();
+    }
   })
 
   $('.general--on').on('click', function () {
+    let arrowOff = $(this).parent().find('.general--off');
     $(this).parent().find('.general__link--two').toggleClass('general__link--two--active');
     $(this).parent().find('.general__link--two--active').css('margin-left', 40);
     $(this).parent().find('.general__link--two--active').css('margin-bottom',10);
     $(this).parent().find('.general--off').toggleClass('general--on-active');
     $(this).parent().find('.general--off').css('margin-left', 40);
     $(this).parent().find('.arrowed').toggleClass('arrowed--active'); //OK
-
+    if (arrowOff.parent().children('.arrowed').is(':hidden'))
+    {
+      arrowOff.parent().children('.arrowed').show();
+    } else {
+      arrowOff.parent().children('.arrowed').hide();
+    }
   })
 
   $('.general--off').on('click', function () {
@@ -82,8 +93,10 @@ $(document).ready(function () {
     $(this).parent().find('.general__link--two--active').css('margin-left', 50);
     $(this).parent().find('.general__link--two--active').css('margin-bottom',10);
     $(this).parent().find('.arrowed').toggleClass('arrowed--active'); //OK
-
   })
+
+
+
   $('#exampleFormControlSelect1').on('click', function () { 
     
     $('.form__ico').toggleClass('form__ico--active')
@@ -124,13 +137,22 @@ $(document).ready(function () {
   });
 
 
-//pagination
 
-  //pagination
 
+
+  link();
 });
 
-
+function link() {
+  let links = $('.general--on');
+  if (!links.hasClass('.general--on--active')) {
+    console.log('no active');
+    let a = links.parent().find('.arrowed').hide();
+    console.log(a);
+    
+  }
+  
+}
 
 function showDialog(text) {
   $('#content').html(text);
